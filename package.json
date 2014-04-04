@@ -1,0 +1,17 @@
+{
+  "name": "harp-browserify",
+  "version": "0.1.0",
+  "description": "an example of using harp with browserify for an asset pipeline",
+  "scripts": {
+    "bundle-js": "browserify js/app.js > js/bundle.js",
+    "watch-js": "watchify js/app.js -o js/bundle.js",
+    "watch": "harp server & npm run watch-js"
+  },
+  "author": "Steve Klise",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^3.38.0",
+    "watchify": "^0.6.3",
+    "harp": "^0.12.1"
+  }
+}
